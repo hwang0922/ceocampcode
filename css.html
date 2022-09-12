@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Backgrounds</title>
+	<style>
+  div.keyboard {
+  background-color: orange;
+  height: 50px;
+  width: 100px;
+  margin: 10px;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+		div.keyboard:hover { width: 3000px; }
+  p{
+  height: 40px;
+  width: 400px;
+  border: solid 30px blue;
+  -webkit-animation-name: movingPara;
+  -webkit-animation-duration: 3s;
+  animation-name: movingPara;
+  animation-duration: 3s;
+}
+@-webkit-keyframes movingPara {
+  from { margin-left: 100%; }
+  to { margin-left: 0%; }
+}
+@keyframes movingPara {
+  from { margin-left: 100%; }
+  to { margin-left: 0%; }
+}
+  #a { box-shadow: 0 0 15px red; }
+		body { background-image: url("http://c.files.bbci.co.uk/DCE1/production/_104454565_mary-mcgowan_caught-in-the-act_00001294.jpg"); }
+	</style>
+</head>
+
+<body>
+<div id="a">
+  안녕하세요
+</div>
+<div class="keyboard">
+  마우스를 올리세요
+
+</div>
+<p>
+
+  반갑습니다
+</p>
+
+</body>
+
+</html>
